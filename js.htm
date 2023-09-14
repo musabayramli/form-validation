@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .d-none {
+            display: none !important;
+        }
+
+        .fa-eye {
+            top: 10px !important;
+            right: 20px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="my-5">
+            <div class="row mb-3">
+                <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputNamel3">
+                    <p>Name bosdur</p>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10 position-relative icn">
+                    <input type="password" class="form-control" id="inputPassword3">
+                    <i onclick="gizle()" class="fa-solid fa-eye position-absolute top-0 end-0"></i>
+                    <p>Pasword bosdur</p>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                    <p>Email bosdur</p>
+                </div>
+            </div>
+    </div>
+    <div class="row mb-3">
+        <button onclick="yoxla()" type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+    </form>
+    <div class="divs">
+        <div id="resultFalse" class="alert alert-danger mt-3" style="display: none;"></div>
+        <div id="resultTrue" class="alert alert-success mt-3" style="display: none;"></div>
+    </div>
+    </div>
+
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Main js -->
+    <script src="app.js"></script>
+</body>
+
+</html>
