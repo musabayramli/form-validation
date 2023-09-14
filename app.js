@@ -19,6 +19,8 @@ function showMessage(isSuccess, message) {
     const newDiv = document.createElement('div');
     newDiv.classList.add('alert', isSuccess ? 'alert-success' : 'alert-danger', 'mt-3');
     newDiv.textContent = message;
+    resultTrue.textContent=''
+    resultFalse.textContent=''
     divs.appendChild(newDiv);
 }
 
@@ -31,8 +33,10 @@ function yoxla() {
     resultFalse.style.display = 'none';
 
     if (isPassword) {
+        resultFalse.style.display = 'none';
         showMessage(true, 'Password dogrudur...');
     } else {
+        resultTrue.style.display = 'none';
         showMessage(false, 'Password yanlisdir...');
     }
 
@@ -40,6 +44,7 @@ function yoxla() {
         resultTrue.style.display = 'block';
         resultTrue.textContent += 'Gmail dogrudur...';
     } else {
+        resultFalse.textContent=''
         resultFalse.style.display = 'block';
         resultFalse.textContent += 'Gmail yanlisdir...';
     }
