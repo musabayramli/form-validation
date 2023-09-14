@@ -42,11 +42,11 @@ function yoxla() {
 
     if (isEmail) {
         resultTrue.style.display = 'block';
-        resultTrue.textContent += 'Gmail dogrudur...';
+        resultTrue.textContent = 'Gmail dogrudur...';
     } else {
         resultFalse.textContent=''
         resultFalse.style.display = 'block';
-        resultFalse.textContent += 'Gmail yanlisdir...';
+        resultFalse.textContent = 'Gmail yanlisdir...';
     }
 
     if (inps[0].value && inps[1].value && inps[2].value) {
